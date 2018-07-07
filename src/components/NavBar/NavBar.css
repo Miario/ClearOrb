@@ -1,0 +1,23 @@
+.navbar {
+	display: flex;
+	justify-content: space-between;
+}
+
+.logo {
+	width: 150px;
+	margin: 5px;
+}
+
+.nav {
+	
+}
+
+li {
+	display: inline-block;
+    margin: 5px;
+}
+
+li a {
+	text-decoration: none;
+	color: #60b0F4;
+}
