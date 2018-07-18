@@ -1,5 +1,5 @@
 .tagline {
-    font-size: 2em;
+    font-size: 2.2em;
     padding: 0;
     margin: 0;
 }
@@ -46,9 +46,13 @@
 .tag {
     text-align: center;
     display: block;
-    width: 500px;
+    width: 650px;
     position: absolute;
     left: 50%;
     top: 235px;
     transform: translate(-50%, -50%);
+}
+
+.tag p {
+    font-size: 1.2em;
 }
