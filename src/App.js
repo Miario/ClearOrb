@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import NavBar from './components/NavBar/NavBar';
+import HeaderImage from './components/HeaderImage/HeaderImage';
 import './App.css';
 
 class App extends Component {
@@ -7,6 +8,7 @@ class App extends Component {
     return (
       <header>
         <NavBar />
+        <HeaderImage />
       </header>
     );
   }

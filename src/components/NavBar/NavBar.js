@@ -22,7 +22,7 @@ class NavBar extends Component {
         return (
             <div className="navbar">
                 <a href="#home" data-scroll><img className="logo" src={logo} alt="Clear Orb Logo" /></a>
-                <nav className={this.state.active ? 'nav-collapse-active' : null}>
+                <nav className={this.state.active ? 'nav-collapse-active' : null}> 
                     <div className="navicon" onClick={this.toggleNav}>
                         <FontAwesomeIcon icon={faBars} size="lg" color="white" />
                     </div>
