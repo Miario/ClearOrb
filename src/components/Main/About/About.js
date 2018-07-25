@@ -20,7 +20,13 @@ class About extends Component {
                         Whether I'm freelancing or working for a company, I'm a strong believer in having 
                         a great work ethic that reflects in any job. View my work below.
                     </p>
-                    <button onClick={toggleResume} type="button" className="btn-resume btn-color"><FontAwesomeIcon icon={faAngleDown} size="lg" color="white" /> View Resume</button>
+                    <button 
+                        onClick={toggleResume} 
+                        type="button" 
+                        className="btn-resume btn-color"
+                        >
+                        <FontAwesomeIcon icon={faAngleDown} size="lg" color="white" /> View Resume
+                        </button>
                     <div id="resume" className="resume-border">
                         <img src={resumeImage} alt="Resume" />
                         <a href={resumePDF} className="btn-resume btn-download btn-color" download><FontAwesomeIcon icon={faDownload} size="sm" color="white" /> Download</a>
