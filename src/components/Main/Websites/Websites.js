@@ -1,13 +1,13 @@
 import React, { Component } from 'react';
-import './projects.css';
+import './websites.css';
 
 
 
-class Projects extends Component {
+class Websites extends Component {
     render() {
         return (
-            <section id="projects">
-            <h1>Projects</h1>
+            <section id="websites">
+            <h1>Websites</h1>
                 <div className="container">
                     <div id="gallery" className="flex">
                         <div className="card">
@@ -66,4 +66,4 @@ class Projects extends Component {
 
 }
 
-export default Projects;
+export default Websites;

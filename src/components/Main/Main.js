@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import About from './About/About';
-import Projects from './Projects/Projects';
+import Websites from './Websites/Websites';
 import './Main.css';
 
 class Main extends Component {
@@ -8,7 +8,7 @@ class Main extends Component {
         return (
             <main>
             	<About />
-                <Projects />
+                <Websites />
             </main>
         )        
     }
