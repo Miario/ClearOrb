@@ -1,4 +1,11 @@
+body {
+	font-family: 'Exo 2', sans-serif;
+	color: #37302a;
+ 	margin: 0;
+  	padding: 0;
+}
+
 .container {
 	margin: 0 auto 0 auto;
-	max-width: 1024px;
+	max-width: 1200px;
 }
