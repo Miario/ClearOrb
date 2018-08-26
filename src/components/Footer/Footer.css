@@ -12,6 +12,7 @@
     float: left;
     color: #60b0F4;
     margin-top: 20px;
+    padding-left: 10px;
 }
 
 .footer a {
@@ -21,6 +22,7 @@
 .social {
     float: right;
     margin-top: 10px;
+    padding-right: 10px;
 }
 
 .fa-2x {
