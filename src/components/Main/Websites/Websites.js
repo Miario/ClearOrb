@@ -7,8 +7,8 @@ class Websites extends Component {
     render() {
         return (
             <section id="websites">
-            <h1>Websites</h1>
                 <div className="container">
+                    <h1>Websites</h1>
                     <div id="gallery" className="flex">
                         <div className="card">
                             <div><img src={ require('./img/fishspot.png') } /></div>

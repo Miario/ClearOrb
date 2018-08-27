@@ -5,8 +5,8 @@ class Projects extends Component {
     render() {
         return (
             <section id="projects">
-            <h1>Projects</h1>
                 <div className="container">
+                    <h1>Projects</h1> 
                     <div id="gallery" className="flex">
                         <div className="card">
                             <div><img src={ require('./img/robofriends.png') } /></div>

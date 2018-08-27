@@ -11,8 +11,8 @@ class About extends Component {
     render() {
         return (
             <section id="about">
-                <h1>About</h1>
                 <div className="container">
+                <h1>About</h1>
                     <p>
                         Hi, I'm Mario Indyushkin. Based in Portland, Oregon I am a web developer passionate 
                         in design and development. My main focus is Front-End development but I have no problem 
