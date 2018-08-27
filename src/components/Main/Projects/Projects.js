@@ -9,7 +9,31 @@ class Projects extends Component {
                 <div className="container">
                     <div id="gallery" className="flex">
                         <div className="card">
-                            <div><img src={ require('./img/smartbrain.png') } /></div>
+                            <div><img src={ require('./img/robofriends.png') } /></div>
+                            <div className="text">
+                                <div className="title">Title</div>
+                                <span>Description</span>
+                            </div>
+                            <div className="button">Learn More</div>
+                        </div>
+                        <div className="card">
+                            <div><img src={ require('./img/wordbler.png') } /></div>
+                            <div className="text">
+                                <div className="title">Title</div>
+                                <span>Description</span>
+                            </div>
+                            <div className="button">Learn More</div>
+                        </div>
+                        <div className="card">
+                            <div><img src={ require('./img/patatapclone.png') } /></div>
+                            <div className="text">
+                                <div className="title">Title</div>
+                                <span>Description</span>
+                            </div>
+                            <div className="button">Learn More</div>
+                        </div>
+                        <div className="card">
+                            <div><img src={ require('./img/cryptocalculator.png') } /></div>
                             <div className="text">
                                 <div className="title">Title</div>
                                 <span>Description</span>
@@ -25,31 +49,7 @@ class Projects extends Component {
                             <div className="button">Learn More</div>
                         </div>
                         <div className="card">
-                            <div><img src={ require('./img/pdxautobrokers.png') } /></div>
-                            <div className="text">
-                                <div className="title">Title</div>
-                                <span>Description</span>
-                            </div>
-                            <div className="button">Learn More</div>
-                        </div>
-                        <div className="card">
-                            <div><img src={ require('./img/pbsteel.png') } /></div>
-                            <div className="text">
-                                <div className="title">Title</div>
-                                <span>Description</span>
-                            </div>
-                            <div className="button">Learn More</div>
-                        </div>
-                        <div className="card">
-                            <div><img src={ require('./img/pdxautozone.png') } /></div>
-                            <div className="text">
-                                <div className="title">Title</div>
-                                <span>Description</span>
-                            </div>
-                            <div className="button">Learn More</div>
-                        </div>
-                        <div className="card">
-                            <div><img src={ require('./img/straightcutsbarber.png') } /></div>
+                            <div><img src={ require('./img/randomusergenerator.png') } /></div>
                             <div className="text">
                                 <div className="title">Title</div>
                                 <span>Description</span>
