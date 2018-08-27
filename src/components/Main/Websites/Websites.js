@@ -1,8 +1,4 @@
 import React, { Component } from 'react';
-import './websites.css';
-
-
-
 class Websites extends Component {
     render() {
         return (

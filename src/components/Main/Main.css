@@ -5,3 +5,82 @@ h1 {
 	background: linear-gradient(to top, #000000 0%, #434343 100%);
 	border-radius: 4px;
 }
+
+/* ------------------------------------------
+  CARD STYLES
+--------------------------------------------- */
+#gallery {
+    margin-bottom: 10px;
+}
+
+#gallery img {
+    width: 400px;
+    height: 300px;
+    max-width: 100%;
+}
+
+.flex {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.card {
+    position: relative;
+    line-height: 0;
+}
+
+.card img {
+	cursor: pointer;
+	transition: opacity .5s;
+}
+
+.card:hover img {
+	opacity: .05; 
+}
+
+.card:hover .text {
+    opacity: 1;
+    top: 24%; 
+}
+
+.card:hover .button {
+    opacity: 1;
+    bottom: 24%; 
+}
+
+.text {
+    top: 0;
+    left: 0;
+    position: absolute;
+    width: 100%;
+    line-height: 1;
+}
+
+.button {
+    right: 0;
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    border: 2px solid #7DB241;
+    width: 170px;
+    margin: 0 auto;
+    font-size: 13pt;
+    padding: 7px 0;
+    cursor: pointer;
+    line-height: 1;
+}
+.button:hover {
+    background-color: #7DB241;
+	border-color: #7DB241;
+	color: white;
+}
+
+.text, .button {
+    z-index: 2;
+    text-align: center;
+    opacity: 0;
+    transition: all 0.3s ease-in-out;
+    color: #1B242F;
+}
