@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
-import {WebsiteList} from '../Card/CardList';
+import { WebsiteList } from '../Card/CardList';
 import { websiteInfo } from '../Card/cardInfo';
+
 class Websites extends Component {
     render() {
         return (

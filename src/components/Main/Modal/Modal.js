@@ -1,18 +1,68 @@
-import React from 'react';
-import { Button, Header, Image, Modal } from 'semantic-ui-react';
+import React, { Component } from 'react';
+import Modal from 'react-modal';
+import './modal.css';
 
-const ModalGo = () => (
-  <Modal trigger={<Button>Show Modal</Button>}>
-    <Modal.Header>Select a Photo</Modal.Header>
-    <Modal.Content image>
-      <Image wrapped size='medium' src='/images/avatar/large/rachel.png' />
-      <Modal.Description>
-        <Header>Default Profile Image</Header>
-        <p>We've found the following gravatar image associated with your e-mail address.</p>
-        <p>Is it okay to use this photo?</p>
-      </Modal.Description>
-    </Modal.Content>
-  </Modal>
-)
 
-export default ModalGo;
+
+Modal.setAppElement('#root')
+
+class WebsitesModal extends Component {
+  constructor() {
+    super();
+
+    this.state = {
+      modalIsOpen: false
+    };
+
+    this.openModal = this.openModal.bind(this);
+    this.afterOpenModal = this.afterOpenModal.bind(this);
+    this.closeModal = this.closeModal.bind(this);
+  }
+
+  openModal() {
+    this.setState({modalIsOpen: true});
+  }
+
+  afterOpenModal() {
+    // references are now sync'd and can be accessed.
+    // this.subtitle.style.color = '#f00';
+  }
+
+  closeModal() {
+    this.setState({modalIsOpen: false});
+  }
+
+  render() {
+    return (
+      <div>
+        <div className="button" onClick={this.openModal}>Open Modal</div>
+        <Modal
+          isOpen={this.state.modalIsOpen}
+          onAfterOpen={this.afterOpenModal}
+          onRequestClose={this.closeModal}
+          className="modal"
+          overlayClassName="overlay"
+          contentLabel="Example Modal"
+        >
+        <div className="">
+          <div className="window">
+            <div className="slide"><img src={ require(`../Images/modal_1.png`) } /></div>
+          </div>
+          <div className="info-box">
+            <div className="title">Title</div>
+            <div className="tag-modal">Tag</div>
+            <div className="detail">Roambi provides analytics, reporting, 
+            and business intelligence for companies to use on the go. 
+            A Wordpress hosted site written in PHP and Javascript with 
+            Hubspot Integration.</div>
+          </div>
+          <div className="button-modal visible">Button</div>
+          <div className="close" onClick={this.closeModal}>x</div>
+        </div>
+        </Modal>
+      </div>
+    );
+  }
+}
+
+export default WebsitesModal;
