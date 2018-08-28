@@ -11,7 +11,7 @@ class WebsitesModal extends Component {
     super();
 
     this.state = {
-      modalIsOpen: false
+      modalIsOpen: false,
     };
 
     this.openModal = this.openModal.bind(this);
@@ -19,7 +19,7 @@ class WebsitesModal extends Component {
     this.closeModal = this.closeModal.bind(this);
   }
 
-  openModal() {
+  openModal(e) {
     this.setState({modalIsOpen: true});
   }
 
@@ -33,6 +33,7 @@ class WebsitesModal extends Component {
   }
 
   render() {
+    const { title, description, slug, alt, url } = this.props;
     return (
       <div>
         <div className="button" onClick={this.openModal}>Open Modal</div>
@@ -42,23 +43,18 @@ class WebsitesModal extends Component {
           onRequestClose={this.closeModal}
           className="modal"
           overlayClassName="overlay"
-          contentLabel="Example Modal"
         >
-        <div className="">
           <div className="window">
-            <div className="slide"><img src={ require(`../Images/modal_1.png`) } /></div>
+            <div className="slide"><img src={ require(`../Images/${slug}.png`) } alt={alt} /></div>
           </div>
           <div className="info-box">
-            <div className="title">Title</div>
+            <div className="title">{title}</div>
             <div className="tag-modal">Tag</div>
-            <div className="detail">Roambi provides analytics, reporting, 
-            and business intelligence for companies to use on the go. 
-            A Wordpress hosted site written in PHP and Javascript with 
-            Hubspot Integration.</div>
+            <div className="detail">{description}</div>
           </div>
-          <div className="button-modal visible">Button</div>
+          <div className="button-modal-site visible"><a href={url}>View Site</a></div>
+          <div className="button-modal-site button-modal-git visible"><a href={url}>Git Hub</a></div>
           <div className="close" onClick={this.closeModal}>x</div>
-        </div>
         </Modal>
       </div>
     );

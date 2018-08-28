@@ -79,13 +79,12 @@
     margin-top: 13px;
 }
 
-.button-modal {
+.button-modal-site {
     padding: 11px 30px;
     font-size: 10pt;
     transition: all .5s;
     cursor: pointer;
     background: #7DB241;
-    color: #fff;
     font-weight: 600;
     border: 0;
     pointer-events: none;
@@ -94,9 +93,20 @@
     left: 10px;
 }
 
-.button-modal:hover {
-    color: #7DB241;
+.button-modal-site:hover {
     background: #fff;
+}
+
+.button-modal-site a {
+    text-decoration: none;
+    color: #fff;
+}
+.button-modal-site:hover a {
+    color: #7DB241;
+}
+
+.button-modal-git {
+    left: 150px;
 }
 
 .visible {

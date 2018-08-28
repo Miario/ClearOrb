@@ -1,24 +1,31 @@
 import React, { Component } from 'react';
 import WebsitesModal from '../Modal/Modal';
-import { websiteInfo } from '../Card/cardInfo';
 
 class Card extends Component {
     render() {
-        const { title, description, slug, modalRequired } = this.props;
-        let test;
+        const { id, title, description, slug, modalRequired, alt, url } = this.props;
+        let modalButton;
         if(modalRequired) {
-            test = <WebsitesModal websiteInfo={websiteInfo}/>;
+            modalButton = <WebsitesModal
+                        id={id}
+                        title={title} 
+                        description={description} 
+                        slug={slug}
+                        modalRequired={modalRequired}
+                        alt={alt}
+                        url={url}
+                    />;
         } else {
-            test = <div className="button">Learn More</div>;
+            modalButton = <div className="button">Learn More</div>;
         }
     return (
         <div className="card">
-            <img src={ require(`../Images/${slug}.png`) } alt="site"/>
+            <img src={ require(`../Images/${slug}.png`) } alt={alt}/>
             <div className="text">
                 <div className="title">{title}</div>
                 <p>{description}</p>
             </div>
-            {test}
+            {modalButton}
         </div>
         )       
     }

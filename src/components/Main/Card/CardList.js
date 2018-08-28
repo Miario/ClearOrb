@@ -14,6 +14,8 @@ export const WebsiteList = ({ websiteInfo }) => {
                             description={websiteInfo[i].description} 
                             slug={websiteInfo[i].slug}
                             modalRequired={websiteInfo[i].modalRequired}
+                            alt={websiteInfo[i].alt}
+                            url={websiteInfo[i].url}
                         />
                     );
                 })
@@ -35,6 +37,8 @@ export const ProjectList = ({ projectInfo }) => {
                             description={projectInfo[i].description} 
                             slug={projectInfo[i].slug}
                             modalRequired={projectInfo[i].modalRequired}
+                            alt={projectInfo[i].alt}
+                            url={projectInfo[i].url}
                         />
                     );
                 })
