@@ -3,13 +3,15 @@ import './Tagline.css';
 
 const Tagline = () => {
     return (
-        <div className="tag">
-            <h2 className="tagline">Web Designer / Developer</h2>
-            <p >
-                If you are a business seeking a web presence or an employer looking to 
-                hire, don't hesitate to send me an email.
-            </p>
-            <a className="btn btn-color" href="#contact" data-scroll>Contact Me</a>
+        <div className="flex">
+            <div className="tag">
+                <h2 className="tagline">Web Designer / Developer</h2>
+                <p >
+                    Looking to for a Developer?
+                    Send me an email below
+                </p>
+                <a className="btn btn-color" href="#contact" data-scroll>Contact Me</a>
+            </div>
         </div>
     )        
 }

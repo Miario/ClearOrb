@@ -1,18 +1,24 @@
 h1 {
-	padding: 15px 0 15px 10px;
-	border: 1px solid #0c0c0c;
-	color: #60b0F4;
-	background: linear-gradient(to top, #000000 0%, #434343 100%);
-	border-radius: 4px;
+    text-align: center;
+	color: #60B0F4;
+    margin: 0;
+    padding: 15px 0 15px 0;
+    font-size: 32px;
+    background: linear-gradient(to top, #000000 0%, #434343 100%);
+}
+
+#websites {
+    background: #F5F5F5;
+}
+
+section {
+    padding-top: 100px;
+    padding-bottom: 100px;
 }
 
 /* ------------------------------------------
   CARD STYLES
 --------------------------------------------- */
-.gallery {
-    margin-bottom: 10px;
-}
-
 .gallery img {
     width: 400px;
     height: 300px;
