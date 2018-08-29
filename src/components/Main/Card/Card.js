@@ -1,5 +1,9 @@
 import React, { Component } from 'react';
 import WebsitesModal from '../Modal/Modal';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+
+AOS.init();
 
 class Card extends Component {
     render() {
@@ -16,7 +20,7 @@ class Card extends Component {
                         alt={alt}
                         url={url}
                         github={github}
-                    />;
+            />;
         } else if(github !== '') {
             cardButton = 
                 <div>
@@ -26,8 +30,22 @@ class Card extends Component {
         } else {
             cardButton = <div className="button button-standard">Learn More</div>;
         }
+
+        let animate;
+        if(id === 3 || id === 6) {
+            animate = 'fade-left';
+        } else if(id === 1 || id === 4) {
+            animate = 'fade-right';
+        } else if(id === 2) {
+            animate = 'fade-down';
+        } else if(id === 5) {
+            animate = 'fade-up';
+        } else {
+            animate = 'flip-up';
+        }
+        
     return (
-        <div className="card">
+        <div data-aos={animate} data-aos-delay="60" className="card">
             <img src={ require(`../Images/${slug}.png`) } alt={alt}/>
             <div className="text">
                 <div className="title">{title}</div>
