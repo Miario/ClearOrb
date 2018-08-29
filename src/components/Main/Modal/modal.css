@@ -43,7 +43,7 @@
 
 .close {
     bottom: 25px;
-    right: 10px;
+    right: 15px;
     color: #bbb;
     font-size: 20pt;
     position: absolute;
@@ -58,19 +58,19 @@
     color: #444;
 }
 
-.title {
-    font-size: 24px;
-    line-height: 24px;
+.modal-title {
+    font-size: 32px;
+    line-height: 32px;
 }
 
-.tag-modal {
+.modal-tag {
     display: block;
     font-weight: 300;
     color: #c0c0c0;
     font-family: 'Raleway-bold';
     border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-    padding-bottom: 15px;
-    font-size: 8pt;
+    padding: 5px 0 15px 2px;
+    font-size: 16px;
 }
 
 .detail {

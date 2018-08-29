@@ -33,7 +33,7 @@ class WebsitesModal extends Component {
   }
 
   render() {
-    const { title, description, slug, alt, url, github } = this.props;
+    const { title, short_desc, long_desc, slug, alt, url, github } = this.props;
     let modalButton;
     if(github !== '') {
       modalButton = 
@@ -47,7 +47,7 @@ class WebsitesModal extends Component {
     }
     return (
       <div>
-        <div className="button button-standard" onClick={this.openModal}>Open Modal</div>
+        <div className="button button-standard" onClick={this.openModal}>Learn More</div>
         <Modal
           isOpen={this.state.modalIsOpen}
           onAfterOpen={this.afterOpenModal}
@@ -59,9 +59,9 @@ class WebsitesModal extends Component {
             <div className="slide"><img src={ require(`../Images/${slug}.png`) } alt={alt} /></div>
           </div>
           <div className="info-box">
-            <div className="title">{title}</div>
-            <div className="tag-modal">Tag</div>
-            <div className="detail">{description}</div>
+            <div className="modal-title">{title}</div>
+            <div className="modal-tag">{short_desc}</div>
+            <div className="detail">{long_desc}</div>
           </div>
           {modalButton}
           <div className="close" onClick={this.closeModal}>x</div>

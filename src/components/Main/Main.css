@@ -31,6 +31,10 @@ h1 {
     line-height: 0;
 }
 
+.card p {
+    color: #7DB241;
+}
+
 .card img {
 	cursor: pointer;
 	transition: opacity .5s;

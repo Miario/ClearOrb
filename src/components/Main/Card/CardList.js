@@ -11,7 +11,8 @@ export const WebsiteList = ({ websiteInfo }) => {
                             key={websiteInfo[i].id} 
                             id={websiteInfo[i].id} 
                             title={websiteInfo[i].title} 
-                            description={websiteInfo[i].description} 
+                            short_desc={websiteInfo[i].short_desc}
+                            long_desc={websiteInfo[i].long_desc}
                             slug={websiteInfo[i].slug}
                             modalRequired={websiteInfo[i].modalRequired}
                             alt={websiteInfo[i].alt}
@@ -35,7 +36,7 @@ export const ProjectList = ({ projectInfo }) => {
                             key={projectInfo[i].id} 
                             id={projectInfo[i].id} 
                             title={projectInfo[i].title} 
-                            description={projectInfo[i].description} 
+                            short_desc={projectInfo[i].short_desc}
                             slug={projectInfo[i].slug}
                             modalRequired={projectInfo[i].modalRequired}
                             alt={projectInfo[i].alt}

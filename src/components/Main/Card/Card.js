@@ -3,13 +3,14 @@ import WebsitesModal from '../Modal/Modal';
 
 class Card extends Component {
     render() {
-        const { id, title, description, slug, modalRequired, alt, url, github } = this.props;
+        const { id, title, short_desc, long_desc, slug, modalRequired, alt, url, github } = this.props;
         let cardButton;
         if(modalRequired) {
             cardButton = <WebsitesModal
                         id={id}
                         title={title} 
-                        description={description} 
+                        short_desc={short_desc} 
+                        long_desc={long_desc} 
                         slug={slug}
                         modalRequired={modalRequired}
                         alt={alt}
@@ -19,8 +20,8 @@ class Card extends Component {
         } else if(github !== '') {
             cardButton = 
                 <div>
-                    <div className="button"><a href={url}>Learn More</a></div>;
-                    <div className="button button-git"><a href={github}>Git Hub</a></div>;
+                    <div className="button"><a href={url}>Learn More</a></div>
+                    <div className="button button-git"><a href={github}>Git Hub</a></div>
                 </div>
         } else {
             cardButton = <div className="button button-standard">Learn More</div>;
@@ -30,7 +31,7 @@ class Card extends Component {
             <img src={ require(`../Images/${slug}.png`) } alt={alt}/>
             <div className="text">
                 <div className="title">{title}</div>
-                <p>{description}</p>
+                <p>{short_desc}</p>
             </div>
             {cardButton}
         </div>
