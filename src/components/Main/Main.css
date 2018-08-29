@@ -42,7 +42,7 @@ section {
 }
 
 .card p {
-    color: #7DB241;
+    color: #1abc9c;
 }
 
 .card img {
@@ -84,7 +84,7 @@ section {
     bottom: 0;
     right: 28%;
     position: absolute;
-    border: 2px solid #7DB241;
+    border: 2px solid #1abc9c;
     width: 100px;
     margin: 0 auto;
     font-size: 13pt;
@@ -93,8 +93,8 @@ section {
     line-height: 1;
 }
 .button:hover {
-    background-color: #7DB241;
-	border-color: #7DB241;
+    background-color: #1abc9c;
+	border-color: #1abc9c;
 	color: white;
 }
 

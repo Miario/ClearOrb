@@ -1,12 +1,11 @@
 #about p {
     max-width: 700px;
-    margin: 20px auto;
+    margin: 50px auto;
 }
 
 /* ------------------------------------------
   RESUME STYLES
 --------------------------------------------- */
-
 /*BUTTON*/
 .btn-resume {
     display: block;
@@ -32,9 +31,8 @@
 }
 
 /*RESUME*/
-
 #resume {
-  display: none;
+    display: none;
 }
 
 #resume img {
@@ -44,8 +42,8 @@
 }
 
 .resume-border {
-    width: 80%;
-    max-width: 800px;
+    width: 90%;
+    max-width: 700px;
     margin: 10px auto;
     padding: 5px 25px 5px 25px;
     position: relative;
@@ -74,10 +72,120 @@
 /* ------------------------------------------
   DOWNLOAD BUTTON STYLES
 --------------------------------------------- */
-
 .btn-download {
     width: 115px;
     padding: 5px 5px;
     margin-top: 35px;
     margin-bottom: 35px;
+}
+
+/* ------------------------------------------
+  LABEL STYLES
+--------------------------------------------- */
+.rhomb {
+    -webkit-box-sizing: content-box;
+    -moz-box-sizing: content-box;
+    box-sizing: content-box;
+    width: 50px;
+    height: 50px;
+    border: none;
+    font: normal 100%/normal Arial, Helvetica, sans-serif;
+    color: rgba(0,0,0,1);
+    -o-text-overflow: clip;
+    text-overflow: clip;
+    background: #1abc9c;
+    -webkit-transform: rotateZ(-45deg);
+    transform: rotateZ(-45deg);
+    -webkit-transform-origin: 0 100% 0deg;
+    transform-origin: 0 100% 0deg;
+}
+
+.rhomb-text {
+    max-width: 225px;
+    text-align: center;
+}
+
+.label-icon {
+    padding-left: 21px;
+    padding-top: 7px;
+    transform: rotateZ(45deg);
+}
+.icon-desktop {
+    padding-left: 19px;
+    padding-top: 8px;
+}
+
+@media all and (min-width: 1092px) {
+    .rhomb-text {
+        text-align: left;
+    }
+    .rhomb1 {
+        margin: 0 15px;
+    }
+    
+    .rhomb2 {
+        margin: 0 15px 0 50px;
+    }
+    .rhomb3 {
+        margin: 0 15px 0 50px;
+    }
+    .rhomb4 {
+        margin: 0 15px;
+    }
+    .flex-rhomb {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+    .box {
+        margin-top: 50px;
+    }
+    .flex-about {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}
+
+@media all and (max-width: 1092px) {
+    .rhomb1 {
+        margin: 15px 0;
+    }
+    
+    .rhomb2 {
+        margin: 15px 0;
+    }
+    .rhomb3 {
+        margin: 15px 0;
+    }
+    .rhomb4 {
+        margin: 15px 0;
+    }
+    .flex-rhomb {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .box {
+        margin-top: 50px;
+    }
+    .flex-row {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .label-wrap {
+        order: 2;
+    }
+    .order {
+        order: 1;
+    }
+    .flex-about {
+        display: flex;
+        flex-direction: column;
+    }
+    #about p {
+        padding: 0 10px;
+    }
 }

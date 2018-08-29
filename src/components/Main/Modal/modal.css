@@ -84,7 +84,7 @@
     font-size: 10pt;
     transition: all .5s;
     cursor: pointer;
-    background: #7DB241;
+    background: #1abc9c;
     font-weight: 600;
     border: 0;
     pointer-events: none;
@@ -102,7 +102,7 @@
     color: #fff;
 }
 .button-modal-site:hover a {
-    color: #7DB241;
+    color: #1abc9c;
 }
 
 .button-modal-git {
