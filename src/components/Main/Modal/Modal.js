@@ -33,10 +33,21 @@ class WebsitesModal extends Component {
   }
 
   render() {
-    const { title, description, slug, alt, url } = this.props;
+    const { title, description, slug, alt, url, github } = this.props;
+    let modalButton;
+    if(github !== '') {
+      modalButton = 
+        <div>
+          <div className="button-modal-site visible"><a href={url}>View Site</a></div>
+          <div className="button-modal-site button-modal-git visible"><a href={github}>Git Hub</a></div>
+        </div>
+    } else {
+      modalButton = 
+        <div className="button-modal-site visible"><a href={url}>View Site</a></div>
+    }
     return (
       <div>
-        <div className="button" onClick={this.openModal}>Open Modal</div>
+        <div className="button button-standard" onClick={this.openModal}>Open Modal</div>
         <Modal
           isOpen={this.state.modalIsOpen}
           onAfterOpen={this.afterOpenModal}
@@ -52,8 +63,7 @@ class WebsitesModal extends Component {
             <div className="tag-modal">Tag</div>
             <div className="detail">{description}</div>
           </div>
-          <div className="button-modal-site visible"><a href={url}>View Site</a></div>
-          <div className="button-modal-site button-modal-git visible"><a href={url}>Git Hub</a></div>
+          {modalButton}
           <div className="close" onClick={this.closeModal}>x</div>
         </Modal>
       </div>

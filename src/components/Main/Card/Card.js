@@ -3,10 +3,10 @@ import WebsitesModal from '../Modal/Modal';
 
 class Card extends Component {
     render() {
-        const { id, title, description, slug, modalRequired, alt, url } = this.props;
-        let modalButton;
+        const { id, title, description, slug, modalRequired, alt, url, github } = this.props;
+        let cardButton;
         if(modalRequired) {
-            modalButton = <WebsitesModal
+            cardButton = <WebsitesModal
                         id={id}
                         title={title} 
                         description={description} 
@@ -14,9 +14,16 @@ class Card extends Component {
                         modalRequired={modalRequired}
                         alt={alt}
                         url={url}
+                        github={github}
                     />;
+        } else if(github !== '') {
+            cardButton = 
+                <div>
+                    <div className="button"><a href={url}>Learn More</a></div>;
+                    <div className="button button-git"><a href={github}>Git Hub</a></div>;
+                </div>
         } else {
-            modalButton = <div className="button">Learn More</div>;
+            cardButton = <div className="button button-standard">Learn More</div>;
         }
     return (
         <div className="card">
@@ -25,7 +32,7 @@ class Card extends Component {
                 <div className="title">{title}</div>
                 <p>{description}</p>
             </div>
-            {modalButton}
+            {cardButton}
         </div>
         )       
     }

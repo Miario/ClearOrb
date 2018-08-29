@@ -16,6 +16,7 @@ export const WebsiteList = ({ websiteInfo }) => {
                             modalRequired={websiteInfo[i].modalRequired}
                             alt={websiteInfo[i].alt}
                             url={websiteInfo[i].url}
+                            github={websiteInfo[i].github}
                         />
                     );
                 })
@@ -39,6 +40,7 @@ export const ProjectList = ({ projectInfo }) => {
                             modalRequired={projectInfo[i].modalRequired}
                             alt={projectInfo[i].alt}
                             url={projectInfo[i].url}
+                            github={projectInfo[i].github}
                         />
                     );
                 })
