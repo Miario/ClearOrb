@@ -22,6 +22,7 @@
     -o-transition: all 0.2s ease-in-out;
     transition: all 0.2s ease-in-out;
     text-decoration: none;
+    cursor: pointer;
 }
 
 .btn-resume:focus,
@@ -115,6 +116,36 @@
     padding-top: 8px;
 }
 
+.services {
+    max-width: 225px;
+}
+
+.services p {
+    text-align: center;
+}
+
+.flex-service-row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.square {
+    width: 80px;
+    height: 80px;
+    border: none;
+    color: rgba(0,0,0,1);
+    background: #1abc9c;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.icon-center {
+    padding-top: 17px;
+}
+
+
 @media all and (min-width: 1092px) {
     .rhomb-text {
         text-align: left;
@@ -143,6 +174,12 @@
     .flex-about {
         display: flex;
         flex-direction: row;
+        justify-content: space-between;
+    }
+    .flex-service-row {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
         justify-content: space-between;
     }
 }

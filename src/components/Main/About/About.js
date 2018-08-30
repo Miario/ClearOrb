@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faAngleDown, faDownload, faDesktop, faClock, faEdit, faBook } from '@fortawesome/free-solid-svg-icons';
+import { faAngleDown, faDownload, faDesktop, faClock, faEdit, faBook, faCode } from '@fortawesome/free-solid-svg-icons';
 import resumeImage from './resume.png';
 import resumePDF from './resume.pdf';
 import toggleResume from './toggle';
@@ -48,23 +48,39 @@ class About extends Component {
                             </div>
                         </div>
                         <div className="about-info">
-                            <p>
+                            <p data-aos='slide-left' data-aos-delay="80">
                                 Hi, I'm Mario Indyushkin. Based in Portland, Oregon I am a web developer passionate 
                                 in design and development. My main focus at the moment is Front-End development but that 
                                 doesn't stop me from occasionally delving into the Back-End. This portfolio showcases
                                 some of my work and projects. View my work below.
                             </p>
-                            <button 
-                                onClick={toggleResume} 
-                                type="button" 
-                                className="btn-resume btn-color"
-                                >
-                                <FontAwesomeIcon icon={faAngleDown} size="lg" color="white" /> View Resume
-                            </button>
-                            <div id="resume" className="resume-border">
-                                <img src={resumeImage} alt="Resume" />
-                                <a href={resumePDF} className="btn-resume btn-download btn-color" download><FontAwesomeIcon icon={faDownload} size="sm" color="white" /> Download</a>
+                            <div className="flex-service-row">
+                                <div className="services">
+                                    <div className="square" data-aos='flip-right' data-aos-delay="100"><FontAwesomeIcon icon={faCode} size="2x" color="white" className="icon-center" /></div>
+                                    <p className="" data-aos='fade' data-aos-delay="100">Bringing ideas to life in the browser Bringing ideas to life in the browserv</p>
+                                </div>
+                                <div className="services">
+                                    <div className="square" data-aos='flip-right' data-aos-delay="150"><FontAwesomeIcon icon={faCode} size="2x" color="white" className="icon-center"/></div>
+                                    <p className="" data-aos='fade' data-aos-delay="150">Bringing ideas to life in the browser Bringing ideas to life in the browserv</p>
+                                </div>
+                                <div className="services">
+                                    <div className="square" data-aos='flip-right' data-aos-delay="200"><FontAwesomeIcon icon={faCode} size="2x" color="white" className="icon-center" /></div>
+                                    <p className="" data-aos='fade' data-aos-delay="200">Bringing ideas to life in the browser Bringing ideas to life in the browserv</p>
+                                </div>
                             </div>
+                        </div>
+                    </div>
+                    <div>
+                        <button 
+                            onClick={toggleResume} 
+                            type="button" 
+                            className="btn-resume btn-color"
+                            >
+                            <FontAwesomeIcon icon={faAngleDown} size="lg" color="white" /> View Resume
+                        </button>
+                        <div id="resume" className="resume-border">
+                            <img src={resumeImage} alt="Resume" />
+                            <a href={resumePDF} className="btn-resume btn-download btn-color" download><FontAwesomeIcon icon={faDownload} size="sm" color="white" /> Download</a>
                         </div>
                     </div>
                 </div>
