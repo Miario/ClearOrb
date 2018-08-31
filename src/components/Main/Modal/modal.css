@@ -118,9 +118,16 @@
     opacity: 1;
 }
 
-@media screen and (min-width: 600px) {
+/* @media screen and (max-width: 700px) {
     .modal {
-        /* top: -6vh; */
-        height: initial;
+        max-width: 80vw;
+        max-height: 70%;
+        position: relative;
+        top: 5%;
+        left: 10%;
+        right: auto;
+        bottom: auto;
+        transform: translate(-50%, -50%);
+        transform: scale(.8)
     }
-}
+} */
