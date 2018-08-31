@@ -47,7 +47,7 @@ class WebsitesModal extends Component {
     }
     return (
       <div>
-        <div className="button button-standard" onClick={this.openModal}>Learn More</div>
+        <div className="button-card button-card-standard" onClick={this.openModal}>Learn More</div>
         <Modal
           isOpen={this.state.modalIsOpen}
           onAfterOpen={this.afterOpenModal}

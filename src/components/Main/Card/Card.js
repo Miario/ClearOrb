@@ -24,11 +24,11 @@ class Card extends Component {
         } else if(github !== '') {
             cardButton = 
                 <div>
-                    <div className="button"><a href={url}>Learn More</a></div>
-                    <div className="button button-git"><a href={github}>Git Hub</a></div>
+                    <div className="button-card"><a href={url}>Learn More</a></div>
+                    <div className="button-card button-card-git"><a href={github}>Git Hub</a></div>
                 </div>
         } else {
-            cardButton = <div className="button button-standard">Learn More</div>;
+            cardButton = <div className="button-card button-card-standard">Learn More</div>;
         }
 
         let animate;

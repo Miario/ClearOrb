@@ -59,7 +59,7 @@ section {
     top: 24%; 
 }
 
-.card:hover .button {
+.card:hover .button-card {
     opacity: 1;
     bottom: 24%; 
 }
@@ -72,14 +72,14 @@ section {
     line-height: 1;
 }
 
-.button-standard {
+.button-card-standard {
     right: 0;
     bottom: 0;
     left: 0 !important;
     right: 0 !important;
 }
 
-.button {
+.button-card {
     left: 0;
     bottom: 0;
     right: 28%;
@@ -92,27 +92,27 @@ section {
     cursor: pointer;
     line-height: 1;
 }
-.button:hover {
+
+.button-card:hover {
     background-color: #1abc9c;
 	border-color: #1abc9c;
 	color: white;
 }
 
-.button-git {
+.button-card-git {
     right: 0;
     left: 28%;
 }
 
-.button a {
+.button-card a {
     text-decoration: none;
     color: #1B242F;
 }
-.button:hover a {
+.button-card:hover a {
     color: #fff;
 }
 
-
-.text, .button {
+.text, .button-card {
     z-index: 2;
     text-align: center;
     opacity: 0;
@@ -123,4 +123,16 @@ section {
 .title {
 	font-size: 20px;
 	font-style: bold;
+}
+
+@media all and (max-width: 368px) {
+    .button-card {
+        left: 0;
+        bottom: 0;
+        right: 37%;
+    }
+    .button-card-git {
+        right: 0;
+        left: 37%;
+    }
 }
