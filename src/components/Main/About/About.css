@@ -9,8 +9,8 @@
 /*BUTTON*/
 .btn-resume {
     display: block;
-    margin: 0 auto;
-    line-height: 2.0;
+    margin: 100px auto 0 auto;
+    line-height: 2.2;
     -webkit-user-select: none;
     -moz-user-select: none;
     -ms-user-select: none;
@@ -29,6 +29,12 @@
 .btn-resume:hover {
     text-decoration: none;
     background-color: #025AA5;
+}
+
+@media all and (min-width: 1092px) {
+    .btn-resume {
+        margin: 0 auto;
+    }
 }
 
 /*RESUME*/
@@ -118,6 +124,7 @@
 
 .services {
     max-width: 225px;
+    width: 225px;
 }
 
 .services p {
@@ -127,7 +134,7 @@
 .flex-service-row {
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     justify-content: center;
 }
 
@@ -143,6 +150,12 @@
 
 .icon-center {
     padding-top: 17px;
+}
+
+h3 {
+    font-size: 20px;
+    font-style: bold;
+    text-align: center;
 }
 
 
@@ -209,7 +222,7 @@
     .flex-row {
         display: flex;
         flex-direction: row;
-        flex-wrap: wrap;
+        flex-wrap: no-wrap;
         justify-content: center;
     }
     .label-wrap {
