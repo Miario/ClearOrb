@@ -55,18 +55,18 @@ class About extends Component {
                                 doesn't stop me from occasionally delving into the Back-End. This portfolio showcases
                                 some of my work and projects. View my work below.
                             </p>
-                            <div className="flex-service-row">
-                                <div className="services">
+                            <div className="flex-skills-row">
+                                <div className="skills">
                                     <div className="square" data-aos='flip-right' data-aos-delay="100"><FontAwesomeIcon icon={faPencilAlt} size="2x" color="white" className="icon-center" /></div>
                                     <h3 className="tite">Design</h3>
                                     <p className="" data-aos='fade' data-aos-delay="100">Adobe Suite, Gimp, Pen & Paper</p>
                                 </div>
-                                <div className="services">
+                                <div className="skills">
                                     <div className="square" data-aos='flip-right' data-aos-delay="150"><FontAwesomeIcon icon={faCode} size="2x" color="white" className="icon-center"/></div>
                                     <h3 className="tite">Front End Developer</h3>
                                     <p className="" data-aos='fade' data-aos-delay="150">HTML, CSS, JavaScript, React, Bootstrap, CMS</p>
                                 </div>
-                                <div className="services">
+                                <div className="skills">
                                     <div className="square" data-aos='flip-right' data-aos-delay="200"><FontAwesomeIcon icon={faWrench} size="2x" color="white" className="icon-center" /></div>
                                     <h3 className="tite">Tools</h3>
                                     <p className="" data-aos='fade' data-aos-delay="200">Git, VS Code</p>

@@ -122,16 +122,16 @@
     padding-top: 8px;
 }
 
-.services {
+.skills {
     max-width: 225px;
     width: 225px;
 }
 
-.services p {
+.skills p {
     text-align: center;
 }
 
-.flex-service-row {
+.flex-skills-row {
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
@@ -189,7 +189,7 @@ h3 {
         flex-direction: row;
         justify-content: space-between;
     }
-    .flex-service-row {
+    .flex-skills-row {
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
