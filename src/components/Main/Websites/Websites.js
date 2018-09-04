@@ -7,7 +7,8 @@ class Websites extends Component {
         return (
             <section id="websites">
                 <div className="container">
-                    <h1>Websites</h1>
+                    <h1>WEBSITES</h1>
+                    <div className="header-bar"></div>
                     <WebsiteList websiteInfo={websiteInfo}/>
                 </div>
             </section>

@@ -7,7 +7,8 @@ class Projects extends Component {
         return (
             <section id="projects">
                 <div className="container">
-                    <h1>Projects</h1>
+                    <h1>PROJECTS</h1>
+                    <div className="header-bar"></div>
                     <ProjectList projectInfo={projectInfo}/>
                 </div>
             </section>

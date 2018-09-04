@@ -5,7 +5,8 @@ class Contact extends Component {
         return (
             <section id="contact">
                 <div className="container">
-                    <h1>Contact</h1>
+                    <h1>CONTACT</h1>
+                    <div className="header-bar"></div>
                 </div>
             </section>
         )        

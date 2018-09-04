@@ -15,7 +15,8 @@ class About extends Component {
         return (
             <section id="about">
                 <div className="container">
-                    <h1>About</h1>
+                    <h1>ABOUT</h1>
+                    <div className="header-bar"></div>
                     <div className="flex-about">
                         <div className="label-wrap">
                             <div className="flex-row">

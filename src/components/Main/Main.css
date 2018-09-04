@@ -1,10 +1,15 @@
 h1 {
     text-align: center;
-	color: #60B0F4;
+	color: #5c5c5e;
     margin: 0;
-    padding: 15px 0 15px 0;
-    font-size: 32px;
-    background: linear-gradient(to top, #000000 0%, #434343 100%);
+    font-size: 40px;
+}
+
+.header-bar{
+    width: 70px;
+    height: 4px;
+    background: #5c5c5e;
+    margin: 15px auto 100px auto;
 }
 
 #websites {
@@ -17,12 +22,16 @@ h1 {
 
 section {
     padding-top: 100px;
-    padding-bottom: 100px;
+    padding-bottom: 130px;
 }
 
 /* ------------------------------------------
   CARD STYLES
 --------------------------------------------- */
+.gallery {
+    margin: 20px 0;
+}
+
 .gallery img {
     width: 400px;
     height: 300px;
