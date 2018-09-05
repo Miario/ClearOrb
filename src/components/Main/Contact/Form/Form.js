@@ -42,13 +42,19 @@ class ContactForm extends Component {
             data: qs.stringify(data)
         })
         .then(() => {
-            this.setState({successMsg: <div>Your message has been sent!</div>})
+            this.setState({
+                successMsg: <div>Your message has been sent!</div>
+            })
         })
-        .catch(err => console.log(err));
+        .catch(() => {
+            this.setState({
+                successMsg: <div>There was a problem with sending the request. Please reach me at clearorbi@gmail.com</div>
+            })
+        });
     }
 
     render() {
-        const { name, email, message } = this.state;
+        const { name, email, message, successMsg } = this.state;
         return (
             <form id="contactForm"  onSubmit={this.handleSubmit} >
                 <input 
@@ -74,6 +80,7 @@ class ContactForm extends Component {
                     value={message} 
                     onChange={this.handleChange}>
                 </textarea>
+                {successMsg}
                 <input 
                     className="button-submit" 
                     type="submit" 
