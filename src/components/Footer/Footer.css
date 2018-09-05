@@ -40,14 +40,22 @@
     transition: background .5s;
 }
 
+.arrow-up:hover {
+    background: #464545;
+}
+
 .social {
     margin-top: 18px;
     padding-right: 10px;
 }
 
-.fa-2x {
+.footer-icon {
     margin: 5px;
     padding: 5px;
+}
+
+.footer-icon:hover {
+    color: white;
 }
 
 /* ------------------------------------------
@@ -74,7 +82,7 @@
         margin-top: 5px;
         order: 1;
     }
-    .fa-2x {
+    .footer-icon {
         margin: 0 5px;
     }
     .arrow-up {
