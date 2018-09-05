@@ -3,6 +3,7 @@ h1 {
 	color: #5c5c5e;
     margin: 0;
     font-size: 40px;
+    padding-top: 90px;
 }
 
 .header-bar{
@@ -17,11 +18,10 @@ h1 {
 }
 
 #contact {
-    background: #F5F5F5;
+    background: #E8E8E8;
 }
 
 section {
-    padding-top: 100px;
     padding-bottom: 130px;
 }
 
