@@ -1,6 +1,6 @@
 form {
     margin: 0 auto;
-    width: 80%; 
+    width: 70%; 
 }
 
 form input, textarea {
@@ -10,8 +10,8 @@ form input, textarea {
     outline: none;
     border: 0;
     padding: 10px 15px;
-    background: #1E242C;
-    font-size: 12pt;
+    background: #2b323a;
+    font-size: 16px;
     margin-bottom: 3px;
     color: #fff; 
 }
@@ -27,10 +27,4 @@ form .button-submit {
     padding: 10px 30px;
     color: #fff;
     cursor: pointer;
-    /* background: transparent; */
-    /* outline: 0;  */
-}
-
-form .button:hover { 
-    background: #04C2C9;
 }

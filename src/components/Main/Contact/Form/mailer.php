@@ -15,10 +15,10 @@
         }
 
         // Set the recipient email address.
-        $recipient = "clearorbi@gmail.com";
+        $recipient = "mindyushkin@clearorb.com";
 
         // Set the email subject.
-        $subject = "New contact from $name Via ClearOrb.com";
+        $subject = "New contact from $name via ClearOrb.com";
 
         // Build the email content.
         $email_content = "Name: $name\n";

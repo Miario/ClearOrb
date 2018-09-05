@@ -38,7 +38,7 @@ class ContactForm extends Component {
         axios({
             method: 'POST',
             headers: { 'content-type': 'application/x-www-form-urlencoded' },
-            url: 'https://www.clearorb.com/testbuild/mailer.php',
+            url: 'mailer.php',
             data: qs.stringify(data)
         })
         .then(() => {
@@ -66,7 +66,7 @@ class ContactForm extends Component {
                     required 
                 />
                 <input 
-                    placeholder="Enter email" 
+                    placeholder="Email" 
                     type="email" 
                     name="email" 
                     value={email} 
