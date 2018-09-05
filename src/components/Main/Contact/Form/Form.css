@@ -1,0 +1,36 @@
+form {
+    margin: 0 auto;
+    width: 80%; 
+}
+
+form input, textarea {
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    outline: none;
+    border: 0;
+    padding: 10px 15px;
+    background: #1E242C;
+    font-size: 12pt;
+    margin-bottom: 3px;
+    color: #fff; 
+}
+
+form textarea {
+    margin-bottom: 5px;
+}
+
+form .button-submit {
+    width: 120px;
+    float: right;
+    margin: 5px 0 0 0;
+    padding: 10px 30px;
+    color: #fff;
+    cursor: pointer;
+    /* background: transparent; */
+    /* outline: 0;  */
+}
+
+form .button:hover { 
+    background: #04C2C9;
+}

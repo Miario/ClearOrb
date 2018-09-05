@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import ContactForm from './Form/Form';
 
 class Contact extends Component {
     render() {
@@ -7,6 +8,7 @@ class Contact extends Component {
                 <div className="container">
                     <h1>CONTACT</h1>
                     <div className="header-bar"></div>
+                    <ContactForm />
                 </div>
             </section>
         )        
