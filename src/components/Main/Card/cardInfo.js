@@ -51,7 +51,7 @@ export const websiteInfo = [
       slug: 'thumb_5',
       modalRequired: true,
       alt: 'PDX Auto Zone Card',
-      url: 'www.pdxauto.clearorb.com',
+      url: 'http://www.pdxauto.clearorb.com',
       github: ''
     },
     {
@@ -62,7 +62,7 @@ export const websiteInfo = [
       slug: 'thumb_6',
       modalRequired: true,
       alt: 'SmartBrain Card',
-      url: 'www.smartbrain.clearorb.com',
+      url: 'http://www.smartbrain.clearorb.com',
       github: 'https://github.com/Miario/smart-brain'
     }
   ];
@@ -75,7 +75,7 @@ export const websiteInfo = [
       slug: 'thumb_7',
       modalRequired: false,
       alt: 'RoboFriends Card',
-      url: 'www.robofriends.clearorb.com',
+      url: 'http://www.robofriends.clearorb.com',
       github: 'https://github.com/Miario/RoboFriends'
     },
     {
@@ -105,7 +105,7 @@ export const websiteInfo = [
       slug: 'thumb_10',
       modalRequired: false,
       alt: 'Crypto Calculator Card',
-      url: 'https://www.clearorb.com',
+      url: 'https://www.clearorb.com/projects/cryptocalculator/index.html',
       github: 'https://github.com/Miario/CryptoCalculator'
     },
     {
@@ -125,7 +125,7 @@ export const websiteInfo = [
       slug: 'thumb_12',
       modalRequired: false,
       alt: 'Random User Generator Card',
-      url: 'https://www.clearorb.com',
+      url: 'https://www.clearorb.com/projects/randomuser/index.html',
       github: 'https://github.com/Miario/Random_User'
     }
   ];

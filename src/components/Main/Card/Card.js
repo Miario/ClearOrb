@@ -28,7 +28,7 @@ class Card extends Component {
                     <div><a href={github} className="button-card button-card-git">Git Hub</a></div>
                 </div>
         } else {
-            cardButton = <div className="button-card button-card-standard">Learn More</div>;
+            cardButton = <div><a href={url} className="button-card button-card-standard">Learn More</a></div>
         }
 
         let animate;
