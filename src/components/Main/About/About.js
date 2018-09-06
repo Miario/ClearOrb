@@ -4,11 +4,7 @@ import { faAngleDown, faDownload, faDesktop, faClock, faEdit, faBook, faCode, fa
 import resumeImage from './resume.png';
 import resumePDF from './resume.pdf';
 import toggleResume from './toggle';
-import AOS from 'aos';
-import 'aos/dist/aos.css';
 import './About.css';
-
-AOS.init();
 
 class About extends Component {
     render() {
@@ -16,7 +12,7 @@ class About extends Component {
             <section id="about">
                 <div className="container">
                     <h1>ABOUT</h1>
-                    <div className="header-bar"></div>
+                    <div className="header-bar" data-aos='slide-right'></div>
                     <div className="flex-about">
                         <div className="label-wrap">
                             <div className="flex-row">

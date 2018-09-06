@@ -8,7 +8,7 @@ class Projects extends Component {
             <section id="projects">
                 <div className="container">
                     <h1>PROJECTS</h1>
-                    <div className="header-bar"></div>
+                    <div className="header-bar" data-aos='slide-right'></div>
                     <ProjectList projectInfo={projectInfo}/>
                 </div>
             </section>

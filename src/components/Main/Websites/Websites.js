@@ -8,7 +8,7 @@ class Websites extends Component {
             <section id="websites">
                 <div className="container">
                     <h1>WEBSITES</h1>
-                    <div className="header-bar"></div>
+                    <div className="header-bar" data-aos='slide-right'></div>
                     <WebsiteList websiteInfo={websiteInfo}/>
                 </div>
             </section>

@@ -10,7 +10,7 @@ class Contact extends Component {
                 </svg>
                 <div className="container">
                     <h1>CONTACT</h1>
-                    <div className="header-bar"></div>
+                    <div className="header-bar" data-aos='slide-right'></div>
                     <ContactForm />
                 </div>
             </section>
