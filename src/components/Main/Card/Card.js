@@ -24,8 +24,8 @@ class Card extends Component {
         } else if(github !== '') {
             cardButton = 
                 <div>
-                    <div className="button-card"><a href={url}>Learn More</a></div>
-                    <div className="button-card button-card-git"><a href={github}>Git Hub</a></div>
+                    <div><a href={url} className="button-card">Learn More</a></div>
+                    <div><a href={github} className="button-card button-card-git">Git Hub</a></div>
                 </div>
         } else {
             cardButton = <div className="button-card button-card-standard">Learn More</div>;

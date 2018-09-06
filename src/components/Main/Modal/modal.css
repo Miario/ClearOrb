@@ -91,21 +91,15 @@
     background: #1abc9c;
     font-weight: 600;
     border: 0;
-    pointer-events: none;
     position: absolute;
     bottom: 25px;
     left: 10px;
+    color: #fff;
+    text-decoration: none;
 }
 
 .button-modal-site:hover {
     background: #fff;
-}
-
-.button-modal-site a {
-    text-decoration: none;
-    color: #fff;
-}
-.button-modal-site:hover a {
     color: #1abc9c;
 }
 
@@ -113,14 +107,6 @@
     left: 150px;
 }
 
-.visible {
-    pointer-events: initial;
-}
-
-.visible .modal {
-    transform: scale(1);
-    opacity: 1;
-}
 
 @media screen and (max-width: 700px) {
     .slide img {

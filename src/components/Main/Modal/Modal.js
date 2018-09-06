@@ -36,12 +36,12 @@ class WebsitesModal extends Component {
     if(github !== '') {
       modalButton = 
         <div>
-          <div className="button-modal-site visible"><a href={url}>View Site</a></div>
-          <div className="button-modal-site button-modal-git visible"><a href={github}>Git Hub</a></div>
+          <div><a href={url} className="button-modal-site">View Site</a></div>
+          <div><a href={github} className="button-modal-site button-modal-git">Git Hub</a></div>
         </div>
     } else {
       modalButton = 
-        <div className="button-modal-site visible"><a href={url}>View Site</a></div>
+        <div><a href={url} className="button-modal-site">View Site</a></div>
     }
     return (
       <div>
