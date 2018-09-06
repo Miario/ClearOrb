@@ -5,10 +5,14 @@
 }
 
 .slide {
-    height: 500px;
+    max-height: 500px;
     cursor: pointer;
     display: flex;
     justify-content: center;
+}
+
+.slide img {
+    width: 100%;
 }
 
 .transition {
@@ -59,8 +63,8 @@
 }
 
 .modal-title {
-    font-size: 32px;
-    line-height: 32px;
+    font-size: 26px;
+    line-height: 26px;
 }
 
 .modal-tag {
@@ -118,16 +122,18 @@
     opacity: 1;
 }
 
-/* @media screen and (max-width: 700px) {
-    .modal {
-        max-width: 80vw;
-        max-height: 70%;
-        position: relative;
-        top: 5%;
-        left: 10%;
-        right: auto;
-        bottom: auto;
-        transform: translate(-50%, -50%);
-        transform: scale(.8)
+@media screen and (max-width: 700px) {
+    .slide img {
+        height: 100%;
     }
-} */
+    .modal {
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        width: 90%;
+    }
+    .modal-title {
+        font-size: 20px;
+        line-height: 20px;
+    }
+}

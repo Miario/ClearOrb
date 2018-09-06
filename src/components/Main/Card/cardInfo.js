@@ -3,7 +3,7 @@ export const websiteInfo = [
       id: 1,
       title: 'FishSpot',
       short_desc: 'Node.js, Express, MongoDB',
-      long_desc: 'FishSpot is a web app that allows users to track fishing locations. Users are able to log in and share their favorite spots. Includes account creation with google maps, user authentication, and commenting. Built using Node.js, Express.js, mongoDB, and various other packages. Deployed on Heroku and DNS rerouted through my webhosting.',
+      long_desc: 'FishSpot is a web app that allows users to track fishing locations. Users are able to log in and share their favorite spots. Includes account creation with google maps, user authentication, and commenting. Deployed on Heroku and DNS rerouted through my webhosting.',
       slug: 'thumb_1',
       modalRequired: true,
       alt: 'FishSpot Card',
