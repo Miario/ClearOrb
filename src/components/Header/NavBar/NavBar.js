@@ -28,11 +28,11 @@ class NavBar extends Component {
                             <FontAwesomeIcon icon={faBars} size="lg" color="white" />
                         </div>
                         <ul>
-                            <li><a className="" href="#home" data-scroll>Home</a></li>
-                            <li><a className="" href="#about" data-scroll>About </a></li>
-                            <li><a className="" href="#websites" data-scroll>Websites</a></li>
-                            <li><a className="" href="#projects" data-scroll>Projects</a></li>
-                            <li><a className="" href="#contact" data-scroll>Contact</a></li>
+                            <li><a href="#home" data-scroll>Home</a></li>
+                            <li><a href="#about" data-scroll>About </a></li>
+                            <li><a href="#websites" data-scroll>Websites</a></li>
+                            <li><a href="#projects" data-scroll>Projects</a></li>
+                            <li><a href="#contact" data-scroll>Contact</a></li>
                         </ul>
                     </nav>
                 </div>
