@@ -35,6 +35,7 @@ class ContactForm extends Component {
             'form_msg': this.state.message
         };
 
+        // Post stringified json data to mailer.php
         axios({
             method: 'POST',
             headers: { 'content-type': 'application/x-www-form-urlencoded' },
