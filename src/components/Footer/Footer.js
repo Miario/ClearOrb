@@ -8,7 +8,7 @@ import './Footer.css';
 class Footer extends Component {
     render() {
         return (
-            <div className="footer">
+            <footer>
                 <div className="container flex-footer">
                     <p>&copy; Copyright ClearOrb 2018</p>
                     <a href="#home" className="arrow-up"><FontAwesomeIcon icon={faAngleDoubleUp} /></a>
@@ -18,7 +18,7 @@ class Footer extends Component {
                         <a href="https://github.com/Miario" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon={faGithub} size="2x" className="footer-icon"/></a>
                     </div>
                 </div>
-            </div>
+            </footer>
         )        
     }
 
