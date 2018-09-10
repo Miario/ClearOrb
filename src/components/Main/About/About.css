@@ -38,8 +38,12 @@
 }
 
 /*RESUME*/
-#resume {
+.hidden {
     display: none;
+}
+
+.visible {
+    display: block;
 }
 
 #resume img {
