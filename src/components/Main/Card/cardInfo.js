@@ -18,7 +18,7 @@ export const websiteInfo = [
       slug: 'thumb_2',
       modalRequired: true,
       alt: 'Straight Cuts Barber Card',
-      url: 'https://www.clearorb.com/straightcutsbarber/',
+      url: 'http://www.clearorb.com/straightcutsbarber/',
       github: ''
     },
     {
@@ -40,7 +40,7 @@ export const websiteInfo = [
       slug: 'thumb_4',
       modalRequired: true,
       alt: 'PDX Auto Brokers Card',
-      url: 'https://www.clearorb.com/pdxautobrokers/',
+      url: 'http://www.clearorb.com/pdxautobrokers/',
       github: ''
     },
     {
@@ -95,7 +95,7 @@ export const websiteInfo = [
       slug: 'thumb_9',
       modalRequired: false,
       alt: 'Patatap Clone Card',
-      url: 'https://www.clearorb.com/projects/patatapclone/index.html',
+      url: 'http://www.clearorb.com/projects/patatapclone/index.html',
       github: ''
     },
     {
@@ -105,7 +105,7 @@ export const websiteInfo = [
       slug: 'thumb_10',
       modalRequired: false,
       alt: 'Crypto Calculator Card',
-      url: 'https://www.clearorb.com/projects/cryptocalculator/index.html',
+      url: 'http://www.clearorb.com/projects/cryptocalculator/index.html',
       github: 'https://github.com/Miario/CryptoCalculator'
     },
     {
@@ -115,7 +115,7 @@ export const websiteInfo = [
       slug: 'thumb_11',
       modalRequired: false,
       alt: 'RGB Color Game Card',
-      url: 'https://www.clearorb.com/projects/colorgame/index.html',
+      url: 'http://www.clearorb.com/projects/colorgame/index.html',
       github: ''
     },
     {
@@ -125,7 +125,7 @@ export const websiteInfo = [
       slug: 'thumb_12',
       modalRequired: false,
       alt: 'Random User Generator Card',
-      url: 'https://www.clearorb.com/projects/randomuser/index.html',
+      url: 'http://www.clearorb.com/projects/randomuser/index.html',
       github: 'https://github.com/Miario/Random_User'
     }
   ];
