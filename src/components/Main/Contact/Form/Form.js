@@ -16,7 +16,7 @@ class ContactForm extends Component {
         this.handleChange = this.handleChange.bind(this);
         this.handleSubmit = this.handleSubmit.bind(this);
       }
-      // Change state of input field so text is updated while typing
+    // Change state of input field so text is updated while typing
     handleChange(e) {
         this.setState({ [e.target.name]: e.target.value });
     }

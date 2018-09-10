@@ -5,6 +5,7 @@ export const WebsiteList = ({ websiteInfo }) => {
     return (
         <div className="gallery flex">
             {
+                // Loop through every website and return
                 websiteInfo.map((info, i) => {
                     return (
                         <Card 
@@ -30,6 +31,7 @@ export const ProjectList = ({ projectInfo }) => {
     return (
         <div className="gallery flex">
             {
+                // Loop through every project and return
                 projectInfo.map((info, i) => {
                     return (
                         <Card 
